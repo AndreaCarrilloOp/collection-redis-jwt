@@ -1,0 +1,26 @@
+{
+  "name": "jazz-collection-redis",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed": "node --env-file=.env scripts/seed.js",
+    "admin": "node --env-file=.env scripts/admin.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "vue": "^3.5.40",
+    "vue-router": "^4.6.4",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "vite": "^8.1.5",
+    "netlify-cli": "^23.0.0"
+  }
+}
